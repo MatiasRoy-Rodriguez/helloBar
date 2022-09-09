@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			const link = document.createElement('link');
 			link.id = 'helloBarStyle';
 			link.rel = 'stylesheet';
-			link.href = './helloBar.css';
+			link.href = 'https://matiasroy-rodriguez.github.io/helloBar/helloBar.css';
 			document.head.appendChild(link);
 		}
 	}
