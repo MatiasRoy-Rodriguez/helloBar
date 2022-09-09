@@ -62,7 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
         div.appendChild(p);
         div.appendChild(btn);
         a.appendChild(div);
-        document.body.insertBefore(a, document.body.firstChild);
+        document.querySelector("header").appendChild(a);
     }
 
 });
+
