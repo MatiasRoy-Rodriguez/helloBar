@@ -52,17 +52,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function createHelloBar() {
-        createHelloBarStyle()
         const a = generateAnchorTag("https://goemms.com/?origin=hellobar");
         const div = generateDivTag();
         const img = generateImgTag("https://academyqa.fromdoppler.com/wp-content/themes/doppler-webpack/hello_bar/img/asset-demoday.png", "Demo Day", "Demo Day");
         const p = generatePTag(`EVENTO ONLINE: Llegó <span>#EMMS2022</span>, ¡el más esperado por la comunidad del Marketing! </p>`);
         const btn = generateButtonTag("ASEGURA TU CUPO GRATIS");
+        const header = document.querySelector("header");
+        createHelloBarStyle();
         div.appendChild(img);
         div.appendChild(p);
         div.appendChild(btn);
         a.appendChild(div);
-        document.querySelector("header").appendChild(a);
+        header.insertBefore(a, header.firstChild);
     }
 
 });
